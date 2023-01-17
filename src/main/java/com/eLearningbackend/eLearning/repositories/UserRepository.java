@@ -9,4 +9,6 @@ public interface UserRepository extends JpaRepository<User, String> {
 
     void save(Role adminRole);
 
+    User findByFirstName(String firstName);
+
 }
