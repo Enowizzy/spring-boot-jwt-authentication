@@ -82,4 +82,9 @@ public class UserService implements UserInterface {
 
     }
 
+    @Override
+    public User getUserByEmail(User user) {
+        return userRepository.findByEmail(user.getEmail());
+    }
+
 }

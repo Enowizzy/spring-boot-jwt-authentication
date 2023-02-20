@@ -13,6 +13,8 @@ public interface UserInterface {
 
     User getUserById(long id);
 
+    User getUserByEmail(User user);
+
     User updateUser(User user, Long id);
 
     void deleteUser(Long id);
